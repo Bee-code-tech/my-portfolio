@@ -1,0 +1,27 @@
+import Link from "next/link";
+import { ProjectGrid } from "@/components/projects/ProjectGrid";
+import { SectionShell } from "@/components/ui/SectionShell";
+import { projects } from "@/lib/projects";
+
+export function Projects() {
+  const featuredProjects = projects.slice(0, 4);
+
+  return (
+    <SectionShell
+      id="projects"
+      label="Selected work"
+      title="Projects with clarity"
+      description="A curated collection of brand, web, and product design work."
+    >
+      <ProjectGrid projects={featuredProjects} />
+      <div className="mt-10">
+        <Link
+          href="/portfolio"
+          className="inline-flex rounded-full border border-border bg-card px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+        >
+          View all projects →
+        </Link>
+      </div>
+    </SectionShell>
+  );
+}
