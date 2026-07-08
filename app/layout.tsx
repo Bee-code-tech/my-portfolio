@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   openGraph: {
     title: siteConfig.title,
-    description: siteConfig.shortDescription,
+    description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.brand,
     locale: "en_US",
@@ -42,8 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
-    description: siteConfig.shortDescription,
-    creator: `@${siteConfig.links.github.split("/").pop()}`,
+    description: siteConfig.description,
+    creator: `@${siteConfig.twitterHandle}`,
+    site: `@${siteConfig.twitterHandle}`,
     images: [siteConfig.ogImage],
   },
   robots: {
@@ -60,7 +61,11 @@ const personJsonLd = {
   url: siteConfig.url,
   email: siteConfig.email,
   description: siteConfig.description,
-  sameAs: [siteConfig.links.github, siteConfig.links.linkedin],
+  sameAs: [
+    siteConfig.links.github,
+    siteConfig.links.linkedin,
+    siteConfig.links.twitter,
+  ],
 };
 
 export default function RootLayout({
