@@ -1,10 +1,28 @@
+const PRODUCTION_URL = "https://thetechod.vercel.app";
+
+function getSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (fromEnv) return fromEnv;
+
+  const vercelUrl = process.env.VERCEL_URL?.replace(/\/$/, "");
+  if (vercelUrl) {
+    return vercelUrl.startsWith("http") ? vercelUrl : `https://${vercelUrl}`;
+  }
+
+  if (process.env.NODE_ENV === "production") {
+    return PRODUCTION_URL;
+  }
+
+  return "http://localhost:3000";
+}
+
 export const siteConfig = {
   name: "Babawale Al-Ameen",
   brand: "TheTechOD",
   title: "Babawale Al-Ameen — Full-Stack Developer",
   description:
     "Babawale Al-Ameen is a Nigerian full-stack developer and UI-focused software engineer who builds refined web and mobile products with React, Next.js, TypeScript, Node.js, React Native, and Web3. He has shipped production systems for Universoul Barbers, My-Estation, Farmwise, and education platforms—spanning fintech, SaaS, agtech, and student housing across Africa and beyond. Passionate about accessible interfaces, scalable architecture, and software that solves real problems.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: getSiteUrl(),
   author: "Babawale Al-Ameen",
   email: "babawaleolatunji64@gmail.com",
   location: "Nigeria",
@@ -25,7 +43,7 @@ export const siteConfig = {
   links: {
     github: "https://github.com/Bee-code-tech",
     linkedin: "https://www.linkedin.com/in/al-ameen-babawale-89ba85209",
-    website: "https://babawale.vercel.app",
+    website: "https://thetechod.vercel.app",
   },
   ogImage: {
     url: "/og-image.png",

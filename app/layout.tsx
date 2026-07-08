@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     creator: `@${siteConfig.links.github.split("/").pop()}`,
-    images: [siteConfig.ogImage.url],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
