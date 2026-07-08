@@ -1,9 +1,11 @@
+import { siteConfig } from "@/lib/site";
+
 export const contactConfig = {
-  availabilityTitle: "Available for selected projects",
-  availabilityNote: "Currently booking for May – July 2026",
+  availabilityTitle: siteConfig.availability.label,
+  availabilityNote: siteConfig.availability.note,
   emailLabel: "Email",
   locationLabel: "Location",
-  location: "Nigeria / Remote",
+  location: "Remote",
   responseTimeLabel: "Response time",
   responseTime: "Within 24 hours",
 } as const;

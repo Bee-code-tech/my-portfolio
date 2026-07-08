@@ -7,7 +7,7 @@ import { projects } from "@/lib/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected full-stack projects by Babawale Al-Ameen — including SaaS platforms, enterprise dashboards, mobile apps, and Web3 products built with React, Next.js, and TypeScript.",
+    "Selected work by Babawale Al-Ameen — SaaS platforms, enterprise dashboards, mobile apps, and production systems built with React, Next.js, and TypeScript.",
 };
 
 export default function PortfolioPage() {
@@ -15,8 +15,8 @@ export default function PortfolioPage() {
     <PageLayout>
       <PageHeader
         label="Portfolio"
-        title="Selected work with clarity"
-        description="A curated collection of brand, web, and product design work created for modern teams."
+        title="Shipped work"
+        description="Production systems and products built end to end for teams that need to move fast."
       />
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6">

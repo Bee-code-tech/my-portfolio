@@ -156,7 +156,7 @@ export function Navbar() {
               href="/contact"
               className="hidden rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-card transition-opacity hover:opacity-90 md:inline-flex"
             >
-              Get in touch
+              {siteConfig.availability.cta}
             </Link>
 
             <HamburgerButton open={menuOpen} onClick={toggleMenu} />
@@ -212,7 +212,7 @@ export function Navbar() {
                   onClick={closeMenu}
                   className="flex w-full items-center justify-center rounded-full bg-foreground px-5 py-3 text-sm font-medium text-card transition-opacity hover:opacity-90"
                 >
-                  Get in touch
+                  {siteConfig.availability.cta}
                 </Link>
               </div>
             </div>

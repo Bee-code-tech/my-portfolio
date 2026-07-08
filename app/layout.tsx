@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   openGraph: {
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.shortDescription,
     url: siteConfig.url,
     siteName: siteConfig.brand,
     locale: "en_US",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
-    description: siteConfig.description,
+    description: siteConfig.shortDescription,
     creator: `@${siteConfig.links.github.split("/").pop()}`,
     images: [siteConfig.ogImage],
   },
@@ -50,6 +50,17 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: siteConfig.name,
+  jobTitle: siteConfig.role,
+  url: siteConfig.url,
+  email: siteConfig.email,
+  description: siteConfig.description,
+  sameAs: [siteConfig.links.github, siteConfig.links.linkedin],
 };
 
 export default function RootLayout({
@@ -63,6 +74,10 @@ export default function RootLayout({
       className={`${instrumentSans.variable} ${stackSansNotch.variable} ${lora.variable} h-full scroll-smooth`}
     >
       <body className="min-h-full antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <div className="relative flex min-h-full flex-col">{children}</div>
       </body>
     </html>

@@ -10,8 +10,8 @@ export function Projects() {
     <SectionShell
       id="projects"
       label="Selected work"
-      title="Projects with clarity"
-      description="A curated collection of brand, web, and product design work."
+      title="Shipped products"
+      description="Production systems, SaaS platforms, and mobile apps built end to end."
     >
       <ProjectGrid projects={featuredProjects} />
       <div className="mt-10">

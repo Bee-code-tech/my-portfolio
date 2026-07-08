@@ -5,9 +5,9 @@ export function WhyMe() {
   return (
     <SectionShell
       id="why-me"
-      label="Why choose me"
-      title="Engineering built around lasting clarity"
-      description="I bring product thinking, system design, and production-ready execution together to ship software that's scalable, maintainable, and built to last."
+      label="Why me"
+      title="Built to ship and scale"
+      description="I take products from idea to production — clean architecture, reliable APIs, and software that teams can maintain."
     >
       <WhyMeGrid />
     </SectionShell>

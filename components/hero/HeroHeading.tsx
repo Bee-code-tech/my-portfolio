@@ -1,7 +1,10 @@
 import type { CSSProperties } from "react";
 
 type HeroHeadingProps = {
-  lines: { text: string; className?: string }[];
+  lines: ReadonlyArray<{
+    readonly text: string;
+    readonly className?: string;
+  }>;
   className?: string;
 };
 

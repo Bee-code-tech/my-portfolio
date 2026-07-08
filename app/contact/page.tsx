@@ -7,7 +7,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Babawale Al-Ameen to discuss full-stack development, product design, Web3 builds, or your next SaaS, mobile, or web application.",
+    "Get in touch with Babawale Al-Ameen — full stack engineer open to remote full-time and contract roles. React, Next.js, TypeScript, and end-to-end product builds.",
 };
 
 export default function ContactPage() {
@@ -15,8 +15,8 @@ export default function ContactPage() {
     <PageLayout>
       <PageHeader
         label="Contact"
-        title="Let's talk about your next project"
-        description="Have a brand, website or product idea in mind? Share a few details and I'll get back to you soon."
+        title="Let's build something together"
+        description="Open to remote full-time and contract work. Share a few details and I'll get back within 24 hours."
       />
       <div className="pb-24">
         <div className="mx-auto max-w-6xl px-6">

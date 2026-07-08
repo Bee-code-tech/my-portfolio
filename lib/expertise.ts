@@ -8,9 +8,9 @@ export type ExpertiseItem = {
 
 export const expertiseItems: ExpertiseItem[] = [
   {
-    title: "Software and system development",
+    title: "Web and system development",
     description:
-      "Building reliable applications, APIs, and system architecture with clean code, scalable patterns, and production-ready delivery.",
+      "Full stack applications, APIs, and system architecture — clean code, scalable patterns, shipped to production.",
     icon: "code",
   },
   {

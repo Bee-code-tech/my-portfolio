@@ -9,38 +9,38 @@ function logoSize(width: number, height: number) {
 
 export const companyLogos = [
   {
-    id: "universoul",
-    name: "Universoul Barbers",
+    id: "codepulse",
+    name: "CodePulse",
     ...logoSize(352, 95),
   },
   {
-    id: "gofix",
-    name: "Gofix",
+    id: "looprail",
+    name: "LoopRail",
     ...logoSize(293, 95),
   },
   {
-    id: "zidoo",
-    name: "Zidoo",
+    id: "rutoai",
+    name: "Ruto AI",
     ...logoSize(263, 95),
   },
   {
-    id: "isoft",
-    name: "iSoft",
+    id: "lodgr",
+    name: "Lodgr",
     ...logoSize(183, 95),
   },
   {
-    id: "doormann",
-    name: "Doormann",
+    id: "afrixta",
+    name: "Afrixta",
     ...logoSize(297, 95),
   },
   {
-    id: "farmwise",
-    name: "Farmwise",
+    id: "hoa",
+    name: "HOA",
     ...logoSize(205, 95),
   },
   {
-    id: "my-estation",
-    name: "My-Estation",
+    id: "dropa",
+    name: "Dropa",
     ...logoSize(252, 85),
   },
 ] as const;

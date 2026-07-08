@@ -5,9 +5,9 @@ export function Expertise() {
   return (
     <SectionShell
       id="expertise"
-      label="My Expertise"
-      title="Creative services for digital brands"
-      description="Focused design and development support to help brands build clearer identities, better websites, and refined product experiences."
+      label="Expertise"
+      title="What I build"
+      description="Full stack engineering across web, mobile, AI, and Web3 — from architecture through production deployment."
     >
       <ExpertiseCarousel />
     </SectionShell>

@@ -37,8 +37,8 @@ export const liamTestimonial: Testimonial = {
 };
 
 export const testimonialsMeta = {
-  trustLabel: "Trusted by 24+ clients",
-  ctaLabel: "Let's work together",
+  trustLabel: "Trusted by 20+ clients",
+  ctaLabel: "Hire me",
   ctaHref: "/contact",
 };
 

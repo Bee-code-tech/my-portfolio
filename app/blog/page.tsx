@@ -6,7 +6,7 @@ import { blogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Writing by Babawale Al-Ameen on full-stack development, UI craft, product thinking, and lessons from building production-ready web and mobile applications.",
+    "Writing by Babawale Al-Ameen on full stack engineering, shipping products, and lessons from building production web and mobile applications.",
 };
 
 export default function BlogPage() {
@@ -14,8 +14,8 @@ export default function BlogPage() {
     <PageLayout>
       <PageHeader
         label="Blog"
-        title="Thoughts on design and building"
-        description="Notes on process, craft, and lessons from shipping real work."
+        title="Thoughts on building and shipping"
+        description="Notes on engineering, process, and getting products to production."
       />
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6">

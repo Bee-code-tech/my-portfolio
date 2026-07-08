@@ -19,26 +19,32 @@ function getSiteUrl(): string {
 export const siteConfig = {
   name: "Babawale Al-Ameen",
   brand: "TheTechOD",
-  title: "Babawale Al-Ameen — Full-Stack Developer",
+  role: "Full Stack Engineer",
+  title: "Babawale Al-Ameen | Full Stack Engineer",
   description:
-    "Babawale Al-Ameen is a Nigerian full-stack developer and UI-focused software engineer who builds refined web and mobile products with React, Next.js, TypeScript, Node.js, React Native, and Web3. He has shipped production systems for Universoul Barbers, My-Estation, Farmwise, and education platforms—spanning fintech, SaaS, agtech, and student housing across Africa and beyond. Passionate about accessible interfaces, scalable architecture, and software that solves real problems.",
+    "Full stack engineer specializing in React, Next.js, and TypeScript. I build and ship production-ready web and mobile products end to end. Open to remote full-time and contract roles.",
+  shortDescription:
+    "Full stack engineer specializing in React, Next.js, and TypeScript. Building fast, shipping to production.",
   url: getSiteUrl(),
   author: "Babawale Al-Ameen",
   email: "babawaleolatunji64@gmail.com",
-  location: "Nigeria",
+  location: "Remote",
   tagline:
     "Full-stack developer building refined digital products with clarity, craft, and real-world impact.",
+  availability: {
+    label: "Open to remote roles",
+    note: "Full-time and contract",
+    cta: "Hire me",
+  },
   keywords: [
     "Babawale Al-Ameen",
     "Al-Ameen Babawale",
-    "full-stack developer Nigeria",
+    "full stack engineer",
     "React developer",
     "Next.js developer",
     "TypeScript developer",
-    "Web3 developer",
-    "UI engineer",
-    "mobile app developer",
-    "software engineer portfolio",
+    "remote software engineer",
+    "software engineer",
   ],
   links: {
     github: "https://github.com/Bee-code-tech",
@@ -49,7 +55,7 @@ export const siteConfig = {
     url: "/og-image.png",
     width: 1200,
     height: 630,
-    alt: "Babawale Al-Ameen — Full-stack developer building refined digital products with clarity, craft, and real-world impact.",
+    alt: "Babawale Al-Ameen — Full stack engineer who ships production-ready products.",
     type: "image/png",
   },
 } as const;
